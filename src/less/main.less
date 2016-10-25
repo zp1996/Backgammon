@@ -4,6 +4,7 @@
 *{
 	margin: 0px;
 	padding: 0px;
+	outline: none;
 }
 body,html{
 	height: 100%;
@@ -76,4 +77,77 @@ footer{
 }
 .author:hover{
 	text-decoration: underline;
+}
+.attention{
+	padding: 20px 0px;
+	text-align: center;
+	color: #aaa;
+}
+.board{
+	.size(450px, 450px);
+	background: url(../images/board.jpg);
+	background-size: 100%;
+	margin: 20px auto;
+	position: relative;
+}
+.btn-area{
+	text-align: center;
+	button{
+		font-size: 18px;
+		padding: 0px 35px;
+		line-height: 2;
+		border-radius: 5px;
+		border: none;
+		cursor: pointer;
+	}
+}
+.fbc(@b, @c: #fff) {
+	background: @b;
+	color: @c;
+}
+.hoverb(@b) {
+	background: multiply(@b, #ccc);
+}
+@osbc: #27BF0B;
+#o-start{
+	.fbc(@osbc);
+}
+#o-start:hover{
+	.hoverb(@osbc);
+}
+@tsbc: #1565AB;
+#t-start{
+	.fbc(@tsbc);
+}
+#t-start:hover{
+	.hoverb(@tsbc);
+}
+@adbc: #C10707;
+#admin-defeat{
+	.fbc(#C10707);
+}
+#admin-defeat:hover{
+	.hoverb(@adbc);
+}
+@rbc: #5F5D5D;
+#regret{
+	.fbc(@rbc);
+}
+#regret:hover{
+	.hoverb(@rbc);
+}
+.piece{
+	@s: 22px;
+	.size(@s, @s);
+	background: #fff;
+	position: absolute;
+	border-radius: @s / 2;
+}
+.black{
+	.piece;
+	background: #000;
+}
+.white{
+	.piece;
+	background-size: #fff;
 }

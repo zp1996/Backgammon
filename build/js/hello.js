@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 exports.default = function () {
-	console.log("%clsgo-cli", "color:#00A185; font-size: 24px");
+	console.log("%c测一下", "color:#00A185; font-size: 24px");
 };
 
 ;

@@ -52,7 +52,7 @@ gulp.task("js", ["es2015"], () => {
 
 gulp.task("server", tasks, () => {
 	browserSync.init({
-    proxy: "http://localhost:3000/"
+    proxy: "http://localhost:1024/"
   });
 });
 

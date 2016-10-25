@@ -11,9 +11,10 @@ app.use(express.static(path.join(__dirname, "build/")));
 app.get('/', (req, res) => {
 	res.render("./index", {
 		pretty: true,
-		title: "lsgo-cli",
+		title: "五子棋",
 		js: ["index.js"]
 	});
 });
 
-server.listen(3000);
+server.listen(1024);
+console.log("server is on...");
