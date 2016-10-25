@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zp1996/chat.git"
+    "url": "git+https://github.com/zp1996/Backgammon.git"
   },
   "keywords": [
     "\"聊天室\""
@@ -16,9 +16,9 @@
   "author": "zp1996",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zp1996/chat/issues"
+    "url": "https://github.com/zp1996/Backgammon/issues"
   },
-  "homepage": "https://github.com/zp1996/chat#readme",
+  "homepage": "https://github.com/zp1996/Backgammon#readme",
   "dependencies": {
     "express": "^4.14.0",
     "jade": "^1.11.0"
