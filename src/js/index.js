@@ -1,3 +1,4 @@
-import hello from "./hello";
+import Board from "./board";
 
-hello();
+new Board(".board");
+
