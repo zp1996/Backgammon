@@ -136,10 +136,9 @@ footer{
 #regret:hover{
 	.hoverb(@rbc);
 }
+@s: 25px;
 .piece{
-	@s: 25px;
 	.size(@s, @s);
-	background: #fff;
 	position: absolute;
 	border-radius: @s / 2;
 }
@@ -149,5 +148,12 @@ footer{
 }
 .white{
 	.piece;
-	background-size: #fff;
+	background: #fff;
+}
+#active{
+	.piece;
+	border: 1px solid #EF4F4F;
+	border-radius: 0px;
+	display: none;
+	box-sizing: border-box;
 }
